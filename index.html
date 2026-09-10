@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Restino — Technical 3D Artist | Portfolio</title>
+<meta name="description" content="Restino's portfolio — a Technical 3D Artist specializing in modeling, rigging and real-time environments with Autodesk Maya, Unity and Roblox Studio." data-i18n-attr="content:meta.description">
+<link rel="icon" href="assets/AvatarLogo2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-bg" aria-hidden="true">
+  <video class="site-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/Cover.png">
+    <source src="assets/videos/bg-1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div id="scroll-progress"></div>
+
+<header class="nav">
+  <a href="#top" class="brand">
+    <img src="assets/AvatarLogo2.png" alt="Restino logo">
+    <span>Restino</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#gallery3d" data-i18n="nav.gallery">3D Gallery</a>
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch to Portuguese"></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow" data-reveal>Technical 3D Artist</p>
+    <h1 data-reveal data-i18n="hero.title">I turn complex concepts into refined, production-ready geometry.</h1>
+    <p class="hero-sub" data-reveal data-i18n="hero.sub">
+      A specialist in Autodesk Maya, focused on technical modeling, rigging and optimized
+      environments for real-time engines (Unity, Roblox Studio). I balance the rigor of
+      industrial design with the fluidity of organic forms.
+    </p>
+    <div class="hero-cta" data-reveal>
+      <a href="#work" class="btn btn-primary" data-i18n="hero.ctaWork">View projects</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="gallery3d" class="gallery3d">
+    <div class="section-head" data-reveal>
+      <span class="section-num">01</span>
+      <h2 data-i18n="gallery.heading">3D Gallery</h2>
+    </div>
+    <p class="gallery3d-intro" data-reveal data-i18n="gallery.intro">
+      Real models, not videos: rotate, zoom and inspect the mesh and texturing of each piece
+      in 360°. Switch on wireframe mode to see the actual topology behind the render.
+    </p>
+
+    <div class="viewer-card" data-reveal>
+      <div class="viewer-stage" id="viewer-stage">
+        <canvas id="viewer-canvas" aria-label="Interactive 3D viewer"></canvas>
+
+        <div class="viewer-loading" id="viewer-loading">
+          <span class="spinner" aria-hidden="true"></span>
+          <span data-i18n="viewer.loading">Loading model…</span>
+        </div>
+
+        <div class="viewer-fallback" id="viewer-fallback" hidden>
+          <img id="viewer-fallback-img" src="assets/models/katana/poster.jpg" alt="">
+          <p data-i18n="viewer.fallback">Your browser couldn't load the interactive 3D viewer — here's a reference render instead.</p>
+        </div>
+
+        <div class="viewer-controls">
+          <button type="button" class="viewer-toggle" id="viewer-autorotate" aria-pressed="true">
+            <span data-i18n="viewer.autorotate">⟳ Auto-rotate</span>
+          </button>
+          <button type="button" class="viewer-toggle" id="viewer-wireframe" aria-pressed="false">
+            ◈ Wireframe
+          </button>
+        </div>
+        <span class="viewer-hint" data-i18n="viewer.hint">Drag to rotate · Scroll to zoom</span>
+      </div>
+
+      <div class="viewer-meta">
+        <span class="tag" id="viewer-tag">High-Density · Bladed Weapon</span>
+        <h3 id="viewer-title">Katana</h3>
+        <p id="viewer-desc">A sword modeled with focus on blade proportion and silhouette readability from any angle.</p>
+      </div>
+    </div>
+
+    <div class="carousel-row">
+      <button type="button" class="carousel-arrow carousel-arrow-prev" id="carousel-prev" aria-label="Previous model">‹</button>
+      <div class="model-carousel" id="model-carousel" role="listbox" aria-label="Select 3D model">
+        <!-- populated by gallery.js from the MODELS list -->
+      </div>
+      <button type="button" class="carousel-arrow carousel-arrow-next" id="carousel-next" aria-label="Next model">›</button>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="section-head" data-reveal>
+      <span class="section-num">02</span>
+      <h2 data-i18n="work.heading">Selected projects</h2>
+    </div>
+
+    <article class="project reverse" data-reveal>
+      <div class="project-media">
+        <img src="assets/Colpcover.png" alt="Cover art for the Colp project" loading="lazy" data-i18n-attr="alt:project.colp.imgAlt">
+        <a class="link-external" target="_blank" rel="noopener" href="https://colp-362-6.vercel.app/" data-i18n="project.colp.linkGame">
+          Open game ↗
+        </a>
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.colp.tag">PlayCanvas · Web3D · Full-Stack Development</span>
+        <h3>Colp</h3>
+        <p class="role" data-i18n="project.colp.role">Role: Solo Developer / Game Designer</p>
+        <p data-i18n="project.colp.desc">
+          Developed a arcade game built in PlayCanvas, leveraging Supabase for real-time 
+          cloud and session data, I self-taught audio production in under 3 months 
+          to make the OST and SFX using FL Studio and Adobe Audition. For the visual 
+          impact, I created frame animations and VFX through a Photoshop and JSON 
+          workflow — completing rapid asset iterations in under two hours to deliver an 
+          immersive and fully interactive experience.
+        </p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/WhMul1rGNp8" title="Colp" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <article class="project project-golfin" data-reveal>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.golfin.tag">PBR · Archviz · Real-Time Render</span>
+        <h3>Golfin Swans <span class="muted">(Avant-Archviz)</span></h3>
+        <p class="role" data-i18n="project.golfin.role">Role: 3D Modeler / Archviz</p>
+        <p data-i18n="project.golfin.desc">
+          Modeled a full apartment from scratch, focused on PBR texturing and an urban
+          aesthetic. I built custom assets to achieve high contrast and an abstract visual
+          narrative within the rendered environment.
+        </p>
+        <div class="video-frame video-frame-interactive" id="golfin-embed">
+          <iframe data-src="https://avant-archviz.vercel.app/" title="Golfin Swans — Interactive 3D Environment" allow="fullscreen" allowfullscreen></iframe>
+          <button type="button" class="embed-launch" data-i18n="project.golfin.launch">▶ Tap to load the interactive 3D scene</button>
+        </div>
+        <a class="link-external" target="_blank" rel="noopener" href="https://avant-archviz.vercel.app/" data-i18n="project.golfin.linkFull">
+          Open fullscreen ↗
+        </a>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/aV5jWhRnXPk" title="Golfin Swans — Avant-Archviz" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reverse" data-reveal>
+      <div class="project-media">
+        <img src="assets/Cover.png" alt="Cover art for the Dys-food project" loading="lazy" data-i18n-attr="alt:project.dysfood.imgAlt">
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.dysfood.tag">Roblox Studio · Luau · Audio Design</span>
+        <h3>Dys-food</h3>
+        <p class="role" data-i18n="project.dysfood.role">Role: Solo developer</p>
+        <p data-i18n="project.dysfood.desc">
+          A technical deep dive into the Roblox engine to build an atmospheric horror
+          experience. I worked through the learning curve of Luau scripting and structural
+          horror design, and composed custom sound effects to deepen immersion — resulting
+          in a visceral, memorable experimental debut.
+        </p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/ue02rqefMOI" title="Dys-food" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" data-reveal>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.upa.tag">Roblox Studio · Low-Poly · Mobile</span>
+        <h3>3D Low-Poly Upa Project</h3>
+        <p class="role" data-i18n="project.upa.role">Role: Freelance for client</p>
+        <p data-i18n="project.upa.desc">
+          Built a modular hospital complex in low-poly, strictly respecting Roblox's polygon
+          budget to guarantee smooth performance on mobile devices. I structured the meshes
+          around precise, optimized collisions and textured authentic hospital assets,
+          delivering a functional environment ready to drop straight into Roblox Studio.
+        </p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/4mjnrX37riM" title="3D Low-Poly Upa Project" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reverse" data-reveal>
+      <div class="project-media project-media-stack">
+        <img src="assets/Untitled.jpg" alt="Lighting render — High-Level Iron Market" loading="lazy" data-i18n-attr="alt:project.iron.imgAlt1">
+        <img src="assets/df.jpg" alt="Environment render — High-Level Iron Market" loading="lazy" data-i18n-attr="alt:project.iron.imgAlt2">
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.iron.tag">Unity HDRP · Lighting · Cinematic Rendering</span>
+        <h3>High-Level Iron Market</h3>
+        <p class="role" data-i18n="project.iron.role">Role: Environment / Lighting Artist</p>
+        <p data-i18n="project.iron.desc">
+          A move into a high-fidelity workflow. The main challenge was mastering Unity's HDRP
+          lighting system with no prior experience with the tool. Iterating on cinematic
+          rendering techniques, I authored the scene's lighting with precision, bringing the
+          environment to life.
+        </p>
+      </div>
+    </article>
+
+    <article class="project" data-reveal>
+      <div class="project-media">
+        <img src="assets/Models.jpg" alt="Low-poly environment assets" loading="lazy" data-i18n-attr="alt:project.lowpoly.imgAlt">
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.lowpoly.tag">Low-Poly · Environment Art · Mobile Performance</span>
+        <h3>Conceptual Low-Poly Environment Design</h3>
+        <p class="role" data-i18n="project.lowpoly.role">Role: Environment Artist (corporate project)</p>
+        <p data-i18n="project.lowpoly.desc">
+          Developed a low-poly environment focused on high performance for mobile devices,
+          keeping it smooth without compromising visual identity. I created authentic forest
+          assets to build a cohesive ecosystem, balancing artistic stylization with gameplay
+          functionality.
+        </p>
+      </div>
+    </article>
+
+    <article class="project reverse" data-reveal>
+      <div class="project-media project-media-stack">
+        <img src="assets/bull.png" alt="Character art — Character Ready" loading="lazy" data-i18n-attr="alt:project.character.imgAlt1">
+        <img src="assets/bullct.png" alt="Character turnaround — Character Ready" loading="lazy" data-i18n-attr="alt:project.character.imgAlt2">
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.character.tag">Maya · Rigging · Retargeting</span>
+        <h3>Character Ready</h3>
+        <p class="role" data-i18n="project.character.role">Role: Character Artist / Rigger</p>
+        <p data-i18n="project.character.desc">
+          Originally a client commission, the project grew into a personal exploration. The
+          main technical challenge was self-teaching advanced rigging and retargeting in
+          Maya — solved by implementing a streamlined animation workflow that pulled the
+          character's distinctive movement together in the final render.
+        </p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/5CtsaekcqwE" title="Character Ready" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" data-reveal>
+      <div class="project-media project-media-stack">
+        <div class="video-frame">
+          <video src="assets/edit_test.mp4" controls playsinline preload="metadata" title="MK PRIME — dialogue edit"></video>
+        </div>
+        <div class="project-media-pair">
+          <img src="assets/Copy%202.png" alt="Creative writing reference — MK PRIME" loading="lazy" data-i18n-attr="alt:project.mkprime.imgAlt1">
+          <img src="assets/Copy%201.png" alt="Creative writing board — MK PRIME" loading="lazy" data-i18n-attr="alt:project.mkprime.imgAlt2">
+        </div>
+        <div class="pdf-scroll" role="region" aria-label="MRA01 crosscheck report">
+          <object data="assets/REPORT_MRA01_CROSSCHECK_FINAL.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" aria-label="REPORT MRA01 CROSSCHECK FINAL">
+            <a href="assets/REPORT_MRA01_CROSSCHECK_FINAL.pdf" target="_blank" rel="noopener">Open report PDF</a>
+          </object>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="tag" data-i18n="project.mkprime.tag">Creative Writing · AI Automation · Audio Engineering</span>
+        <h3>Copywriting, Dialogue Editing &amp; AI Workflows</h3>
+        <p class="role" data-i18n="project.mkprime.role">Role: Freelance sequence for MK PRIME</p>
+        <p data-i18n="project.mkprime.desc">
+          An experimental pipeline combining creative strategy, process engineering, and
+          post-production. I refactored viral reference frameworks improvising "common enemy"
+          and charisma for ad scripts (optimizing retention with news hook like the "Padre CLT"
+          angle); built a technical taxonomy framework (for CEA) to structure ad data for
+          automated AI creative pipelines (avatars/TTS) in Claude; and processed raw lecture
+          audio using precision time-stretching (+20%), pitch correction, and EQ cleanup to
+          deliver fluid, mobile-ready dialogue.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-head" data-reveal>
+      <span class="section-num">03</span>
+      <h2 data-i18n="about.heading">About</h2>
+    </div>
+    <div class="about-grid" data-reveal>
+      <p class="about-lead" data-i18n-html="about.lead">
+        I'm a Technical 3D Artist driven by the synergy between innovation and experimental
+        modeling exploration. My expertise in <strong>Autodesk Maya</strong> centers on
+        technical structure — turning complex mechanical concepts into refined, high-fidelity
+        geometry.
+      </p>
+      <p data-i18n="about.body">
+        I don't just model — I engineer evolving digital artifacts with a future-oriented
+        mindset, balancing the rigor of industrial design with the fluidity of organic,
+        creative atmospheres.
+      </p>
+      <ul class="skills">
+        <li>Autodesk Maya</li>
+        <li>Rigging &amp; Retargeting</li>
+        <li>Unity HDRP</li>
+        <li>Roblox Studio · Luau</li>
+        <li data-i18n="about.skillPoly">Low &amp; High-Poly Modeling</li>
+        <li data-i18n="about.skillPbr">PBR Texturing</li>
+        <li>Full Stack Development</li>
+        <li>Unreal Engine 5.7</li>
+      </ul>
+    </div>
+    <div class="about-certificate" data-reveal>
+      <div class="pdf-scroll pdf-scroll-certificate">
+        <object data="assets/Certificado_Enzo_Restino_Azevedo.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" aria-label="Certificate — Enzo Restino Azevedo">
+          <a href="assets/Certificado_Enzo_Restino_Azevedo.pdf" target="_blank" rel="noopener">Open certificate PDF</a>
+        </object>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="section-head" data-reveal>
+      <span class="section-num">04</span>
+      <h2 data-i18n="contact.heading">Let's talk</h2>
+    </div>
+    <p class="contact-lead" data-reveal data-i18n="contact.lead">
+      Open to freelance projects and opportunities in 3D modeling, real-time environments and
+      game asset development.
+    </p>
+    <div class="contact-links" data-reveal>
+      <a class="contact-card" target="_blank" rel="noopener" href="mailto:erestino80@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span data-i18n="contact.email">Email</span>
+      </a>
+      <a class="contact-card" target="_blank" rel="noopener" href="https://www.linkedin.com/in/restino">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2.5 2.5 0 0 1 5 0V17M12 10v7"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a class="contact-card" target="_blank" rel="noopener" href="https://github.com/Restino-Design">
+        <!-- COLOQUE SUA LOGO SVG AQUI (Substitua o svg abaixo se for fazer na mão) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a class="contact-card" target="_blank" rel="noopener" href="https://wa.me/5516994041726?text=Hi!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%203D%20project." data-i18n-attr="href:contact.whatsappHref">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 1 1-3.7-7M21 3l-2.5 6.5L21 11.5"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span data-i18n="footer.rights">© 2026 Restino. All rights reserved.</span>
+  <a href="#top" data-i18n="footer.backToTop">Back to top ↑</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="gallery.js"></script>
+</body>
+</html>
