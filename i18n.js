@@ -41,31 +41,21 @@
       'meta.description': "Restino's portfolio — a Technical 3D Artist specializing in modeling, rigging and real-time environments with Autodesk Maya, Unity and Roblox Studio.",
       'nav.work': 'Work',
       'nav.gallery': '3D Gallery',
-      'certificate': `              <p style="font-size: 20px; font-weight: bold; letter-spacing: 2px; margin-bottom: 2px;">ESCOLA SANTOS TECH</p>
-              <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 25px;">Vocational Education</p>
-            
-              <p style="font-size: 28px; font-weight: bold; letter-spacing: 4px; margin-bottom: 2px;">CERTIFICATE</p>
-              <p style="font-size: 13px; text-transform: uppercase; margin-top: 0; margin-bottom: 20px;">Of Completion</p>
-            
-              <p style="font-style: italic; margin-bottom: 15px;">Santos Tech School certifies that</p>
-            
-              <p style="font-size: 24px; font-weight: bold; margin-bottom: 5px;">Enzo Restino Azevedo</p>
-              <p style="font-style: italic; font-size: 14px; margin-top: 0; margin-bottom: 25px;">also known by the artistic name <span style="font-weight: bold;">RestinoCore</span></p>
-            
-              <p style="text-align: justify; line-height: 1.6; margin: 0 auto 30px auto; max-width: 700px;">
-                has successfully completed the <span style="font-weight: bold;">Professional Programming</span> course, with a total workload of <span style="font-weight: bold;">192 hours</span>, held in the period from August 2024 to August 2026. Training focused on the job market covering 3D modeling, character animation, and rigging in Autodesk Maya, 3D texturing and texture creation in the Substance family (Substance Painter), game development in Roblox Studio, Unity, and Unreal Engine, programming in C# (Unity) and Luau (Roblox Studio), as well as website development with HTML, CSS, and JavaScript.
-              </p>
-            
-              <p style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 22px; margin-bottom: 0;">Henrique L. S.</p>
-              <p style="font-size: 11px; font-weight: bold; border-top: 1px solid #000; width: 200px; margin: 0 auto 20px auto; padding-top: 2px;">DIRECTORATE</p>
-            
-              <p style="font-size: 10px; font-weight: bold; border: 1px dashed #666; width: 100px; padding: 10px; margin: 0 auto 20px auto;">SANTOS TECH<br>2026<br>COMPLETION</p>
-            
-              <p style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 22px; margin-bottom: 0;">Rodrigo Santos</p>
-              <p style="font-size: 11px; font-weight: bold; border-top: 1px solid #000; width: 200px; margin: 0 auto 25px auto; padding-top: 2px;">PEDAGOGICAL COORDINATION</p>
-            
-              <p style="font-size: 11px; color: #666; margin-bottom: 2px;">Ribeirão Preto, August 29, 2026 | <span style="font-weight: bold;">Registration No. ST-PP-2026-0829-ERA</span></p>
-              <p style="font-size: 11px; color: #666; margin-top: 0;">Av. Nove de Julho, 1992 – Jardim América, Ribeirão Preto/SP, 14020-170</p>`,
+      'cert.school': 'ESCOLA SANTOS TECH',
+      'cert.schoolType': 'Vocational Education',
+      'cert.title': 'CERTIFICATE',
+      'cert.subtitle': 'Of Completion',
+      'cert.certifies': 'Santos Tech School certifies that',
+      'cert.name': 'Enzo Restino Azevedo',
+      'cert.artisticName': 'also known by the artistic name RestinoCore',
+      'cert.body': 'has successfully completed the Professional Programming course, with a total workload of 192 hours, held in the period from August 2024 to August 2026. Training focused on the job market covering 3D modeling, character animation, and rigging in Autodesk Maya, 3D texturing and texture creation in the Substance family (Substance Painter), game development in Roblox Studio, Unity, and Unreal Engine, programming in C# (Unity) and Luau (Roblox Studio), as well as website development with HTML, CSS, and JavaScript.',
+      'cert.director': 'Henrique L. S.',
+      'cert.directorTitle': 'DIRECTORATE',
+      'cert.seal': 'SANTOS TECH 2026 COMPLETION',
+      'cert.coordinator': 'Rodrigo Santos',
+      'cert.coordinatorTitle': 'PEDAGOGICAL COORDINATION',
+      'cert.location': 'Ribeirão Preto, August 29, 2026 | Registration No. ST-PP-2026-0829-ERA',
+      'cert.address': 'Av. Nove de Julho, 1992 – Jardim América, Ribeirão Preto/SP, 14020-170',
       'nav.about': 'About',
       'nav.contact': 'Contact',
       'hero.title': 'I turn complex concepts into refined, production-ready geometry.',
@@ -131,7 +121,21 @@
       'meta.title': 'Restino — Artista 3D Técnico | Portfólio',
       'meta.description': 'Portfólio de Restino, Technical 3D Artist especializado em modelagem, rigging e ambientes em tempo real com Autodesk Maya, Unity e Roblox Studio.',
       'nav.work': 'Trabalho',
-      'certificate': '',
+      'cert.school': '',
+      'cert.schoolType': '',
+      'cert.title': '',
+      'cert.subtitle': '',
+      'cert.certifies': '',
+      'cert.name': '',
+      'cert.artisticName': '',
+      'cert.body': '',
+      'cert.director': '',
+      'cert.directorTitle': '',
+      'cert.seal': '',
+      'cert.coordinator': '',
+      'cert.coordinatorTitle': '',
+      'cert.location': '',
+      'cert.address': '',
       'nav.gallery': 'Galeria 3D',
       'nav.about': 'Sobre',
       'nav.contact': 'Contato',
