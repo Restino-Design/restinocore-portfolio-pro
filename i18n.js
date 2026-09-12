@@ -41,6 +41,21 @@
       'meta.description': "Restino's portfolio — a Technical 3D Artist specializing in modeling, rigging and real-time environments with Autodesk Maya, Unity and Roblox Studio.",
       'nav.work': 'Work',
       'nav.gallery': '3D Gallery',
+      'certificate': ESCOLA SANTOS TECH
+                      Vocational Education
+                      CERTIFICATE
+                      Of Completion
+                      Santos Tech School certifies that
+                      Enzo Restino Azevedo
+                      also known by the artistic name RestinoCore
+                      has successfully completed the Professional Programming course, with a total workload of 192 hours, held in the period from August 2024 to August 2026. Training focused on the job market covering 3D modeling, character animation, and rigging in Autodesk Maya, 3D texturing and texture creation in the Substance family (Substance Painter), game development in Roblox Studio, Unity, and Unreal Engine, programming in C# (Unity) and Luau (Roblox Studio), as well as website development with HTML, CSS, and JavaScript.
+                      Henrique L. S.
+                      DIRECTORATE
+                      SANTOS TECH 2026 COMPLETION
+                      Rodrigo Santos
+                      PEDAGOGICAL COORDINATION
+                      Ribeirão Preto, August 29, 2026 | Registration No. ST-PP-2026-0829-ERA
+                      Av. Nove de Julho, 1992 – Jardim América, Ribeirão Preto/SP, 14020-170,
       'nav.about': 'About',
       'nav.contact': 'Contact',
       'hero.title': 'I turn complex concepts into refined, production-ready geometry.',
@@ -106,6 +121,7 @@
       'meta.title': 'Restino — Artista 3D Técnico | Portfólio',
       'meta.description': 'Portfólio de Restino, Technical 3D Artist especializado em modelagem, rigging e ambientes em tempo real com Autodesk Maya, Unity e Roblox Studio.',
       'nav.work': 'Trabalho',
+      'certificate': ㅤㅤㅤㅤㅤ,
       'nav.gallery': 'Galeria 3D',
       'nav.about': 'Sobre',
       'nav.contact': 'Contato',
