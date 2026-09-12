@@ -41,7 +41,7 @@
       'meta.description': "Restino's portfolio — a Technical 3D Artist specializing in modeling, rigging and real-time environments with Autodesk Maya, Unity and Roblox Studio.",
       'nav.work': 'Work',
       'nav.gallery': '3D Gallery',
-      'certificate': 'ESCOLA SANTOS TECH
+      'certificate': `ESCOLA SANTOS TECH
                       Vocational Education
                       CERTIFICATE
                       Of Completion
@@ -55,7 +55,7 @@
                       Rodrigo Santos
                       PEDAGOGICAL COORDINATION
                       Ribeirão Preto, August 29, 2026 | Registration No. ST-PP-2026-0829-ERA
-                      Av. Nove de Julho, 1992 – Jardim América, Ribeirão Preto/SP, 14020-170',
+                      Av. Nove de Julho, 1992 – Jardim América, Ribeirão Preto/SP, 14020-170`,
       'nav.about': 'About',
       'nav.contact': 'Contact',
       'hero.title': 'I turn complex concepts into refined, production-ready geometry.',
